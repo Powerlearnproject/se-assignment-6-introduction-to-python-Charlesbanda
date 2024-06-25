@@ -1,0 +1,99 @@
+1. **Python Basics:**
+   Python is a high-level, interpreted programming language known for its simplicity and readability.
+   -Key features include dynamic typing, easy syntax, extensive standard library, and strong community support.
+   -Python is popular for web development (Django, Flask), scientific computing (NumPy, Pandas), automation (scripting), and AI/ML (TensorFlow, PyTorch).
+
+2. **Installing Python:**
+   To install Python:
+   - **Windows:** Download the installer from python.org, run it, and select "Add Python to PATH". Verify by opening Command Prompt and typing `python --version`. Use `python -m venv myenv` to create a virtual environment.
+   - **macOS:** Use Homebrew (`brew install python3`) or download from python.org. Verify with `python3 --version`. Set up virtual environment with `python3 -m venv myenv`.
+   - **Linux:** Use package manager (`sudo apt install python3`) or compile from source. Verify with `python3 --version`. Set up virtual environment with `python3 -m venv myenv`.
+
+3. **Python Syntax and Semantics:**
+   ```python
+   # Simple Hello World program
+   print("Hello, World!")
+   ```
+   Explanation: `print()` is a built-in function to output text. `"Hello, World!"` is a string literal enclosed in double quotes.
+
+4. **Data Types and Variables:**
+   Basic data types in Python include integers (`int`), floating-point numbers (`float`), strings (`str`), booleans (`bool`), lists (`list`), tuples (`tuple`), dictionaries (`dict`), and sets (`set`). Example:
+   ```python
+   # Variables and data types
+   num = 10
+   pi = 3.14
+   name = "Alice"
+   is_valid = True
+   ```
+
+5. **Control Structures:**
+   Conditional statements (`if-else`) and loops (`for`, `while`) control program flow. Example:
+   ```python
+   # Conditional statement
+   if x > 5:
+       print("x is greater than 5")
+   else:
+       print("x is 5 or less")
+
+   # For loop
+   for i in range(5):
+       print(i)
+   ```
+
+6. **Functions in Python:**
+   Functions in Python are reusable blocks of code. Example:
+   ```python
+   # Function to add two numbers
+   def add_numbers(a, b):
+       return a + b
+
+   # Calling the function
+   result = add_numbers(5, 3)
+   print(result)  # Output: 8
+   ```
+
+7. **Lists and Dictionaries:**
+   Lists (`list`) store ordered collections of items, while dictionaries (`dict`) store key-value pairs. Example:
+   ```python
+   # List example
+   numbers = [1, 2, 3, 4, 5]
+
+   # Dictionary example
+   person = {"name": "Alice", "age": 30, "city": "New York"}
+   ```
+
+8. **Exception Handling:**
+   Exception handling manages errors gracefully. Example:
+   ```python
+   # Handling division by zero
+   try:
+       result = 10 / 0
+   except ZeroDivisionError:
+       print("Error: Division by zero!")
+   finally:
+       print("Execution completed.")
+   ```
+
+9. **Modules and Packages:**
+   Modules are Python files containing functions and variables. Packages are directories of modules. Example:
+   ```python
+   # Using math module
+   import math
+
+   print(math.sqrt(16))  # Output: 4.0
+   ```
+
+10. **File I/O:**
+    File operations in Python:
+    ```python
+    # Reading from a file
+    with open('file.txt', 'r') as file:
+        content = file.read()
+        print(content)
+
+    # Writing to a file
+    lines = ['Line 1', 'Line 2', 'Line 3']
+    with open('output.txt', 'w') as file:
+        for line in lines:
+            file.write(line + '\n')
+    ```
